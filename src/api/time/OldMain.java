@@ -3,7 +3,7 @@ package api.time;
 import java.util.Date;
 import java.sql.Timestamp;
 
-public class Main {
+public class OldMain {
     public static void main(String[] args) {
         CalendarProblem calendarProblem = new CalendarProblem();
         calendarProblem.getTomorrow();
@@ -41,7 +41,7 @@ public class Main {
 
         Timestamp t1 = new Timestamp(1);
         Date d1 = new Date(1);
-        System.out.println(t1.equals(d1)+" "+d1.equals(t1));
+        System.out.println(t1.equals(d1) + " " + d1.equals(t1));
         // t1 instanceof java.util.Date == true
 
 //        *** Date 클래스의 equlas() ***
