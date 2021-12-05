@@ -12,11 +12,8 @@ public abstract class Counter {
             count.put(language, count.getOrDefault(language, 0) + 1);
         }
 
-        for (Map.Entry<String, Integer> entry : count.entrySet()) {
-            String key = entry.getKey();
-            Integer cnt = entry.getValue();
-
-            System.out.println(key + " " + cnt);
-        }
+        count.forEach((key, val) -> {
+            System.out.println(key + " " + val);
+        });
     }
 }
